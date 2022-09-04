@@ -21,12 +21,12 @@ export default function App() {
     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around' }}>
       <Button
         title='Add'
-        onpress={handleAdd}></Button>
+        onPress={handleAdd}></Button>
       <Button
         title='Clear'
-        onpress={handleClear}></Button>
+        onPress={handleClear}></Button>
     </View>
-     <Text style={{ color: 'red', fontSize: 25}}>Ostoslista</Text>
+     <Text style={{ color: 'red', fontSize: 18}}>Ostoslista</Text>
      <FlatList
       data={list}
       renderItem={({item}) => {
@@ -52,7 +52,7 @@ export default function App() {
 const styles = StyleSheet.create({
   input: {
     width: 300,
-    height: 50,
+    height: 25,
     borderColor: 'gray',
     borderWidth: 1,
     marginTop: 90
